@@ -3,7 +3,7 @@ id: AdeptBLE
 name: AdeptBLE
 type: shield
 url: https://github.com/taichan1113/mouse-test
-requires: [seeeduino_xiao_ble]
+requires: [seeed_xiao]
 features:
   - keys
   - pointer
