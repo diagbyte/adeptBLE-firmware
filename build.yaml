@@ -22,8 +22,3 @@ include:
     shield: AdeptBLE
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-  # Flash this first to wipe all BLE bonds/settings from flash, then flash the
-  # AdeptBLE image above. Use when the device can no longer pair/connect.
-  - board: xiao_ble/nrf52840/zmk
-    shield: settings_reset
-    artifact-name: settings_reset
