@@ -128,13 +128,7 @@
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
 
-        /* force-awake removed for battery: with it, the PMW3610 is pinned in RUN
-         * mode forever and ALL the REST/downshift *_MS settings are ignored (this
-         * is why sensitivity felt identical before/after). Without it the sensor
-         * downshifts to its low-power rest modes when idle; first motion after
-         * idle wakes it within the rest sample time (<=300 ms) = the accepted
-         * slight delay. Restore this line if the trackball fails to wake on this
-         * hardware. */
+        force-awake;
     };
 };
 
